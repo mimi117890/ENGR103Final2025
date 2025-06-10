@@ -4,7 +4,7 @@
 float midi[127] ;
 int A_four = 440 ; 
 
-volatile int num , points=0 , notPoint=0 , i , note= 60 , roundLength = 1000 , pointComp=0 , roundAccel ;
+volatile int num , points=0 , notPoint=0 , i , note= 60 , roundLength = 1100 , pointComp=0 , roundAccel ;
 const byte leftButtonPin=4 , rightButtonPin=5 , switchPin=7 ;
 volatile bool leftFlag = false , rightFlag = false , switchState = false , switchFlag = false ; 
 int delayTime = 300 ;
@@ -159,7 +159,7 @@ void loop() {
     switchFlag = false ; 
   }
   if(switchState) {
-    roundLength=1000 ;
+    roundLength=1100 ;
     points = 0 ;
     for( i=1; i<10; i++) { //number of rounds
       Serial.print(" level:  ") ;
@@ -168,7 +168,7 @@ void loop() {
       Serial.print("current points: ") ;
       Serial.println(points) ;
       delay(delayTime*5) ;
-      roundLength=roundLength-80 ;
+      roundLength=roundLength-100 ;
     }
       Serial.print("total points(max 45): ") ;
       Serial.println(points) ;
