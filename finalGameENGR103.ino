@@ -1,5 +1,5 @@
 
-#include <Adafruit_CircuitPlayground.h>//cpx library
+#include <Adafruit_CircuitPlayground.h> //cpx library
 
 float midi[127] ;
 int A_four = 440 ; 
@@ -19,20 +19,20 @@ void randNumPick() { //select random number 1, 2 or 3.
 //------------------------------------------------------------------
 
 void lightSequence(int i) { //activates portion, counts points
-  for(int n=0; n<i; n++){
+  for(int n=0; n<i; n++) {
     pointComp = 0 ; 
     soundOrLight(n) ;
     shake() ;
-    if(leftFlag){
+    if(leftFlag) {
       lightResponse() ;
     }
-    if(rightFlag){
+    if(rightFlag) {
       soundResponse() ;
     }
-    if(roundAccel>4){
+    if(roundAccel>4) {
       shakeResponse() ;
     }
-    if(pointComp==num){
+    if(pointComp==num) {
       points = points+1 ;
       Serial.println("+1 point! ") ;
     }
@@ -161,7 +161,7 @@ void loop() {
   if(switchState) {
     roundLength=1000 ;
     points = 0 ;
-    for( i=1; i<10; i++) {
+    for( i=1; i<10; i++) { //number of rounds
       Serial.print(" level:  ") ;
       Serial.println(i) ;
       lightSequence(i) ;
