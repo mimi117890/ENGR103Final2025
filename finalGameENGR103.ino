@@ -30,14 +30,14 @@ void lightSequence(int i) { //activates portion, counts points
       soundResponse() ;
     }
     if(roundAccel>4){
-      shakeResponse();
+      shakeResponse() ;
     }
     if(pointComp==num){
-      points = points+1;
-      Serial.println("+1 point! ")
+      points = points+1 ;
+      Serial.println("+1 point! ") ;
     }
     else {
-      notPoint= notPoint+1;
+      notPoint= notPoint+1 ;
     }
   }
 }
