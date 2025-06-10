@@ -14,6 +14,7 @@ light, sound, serial monitor
 
 
 game rules:
+
 1: flip switch to start
 
 2: after each output, either light, sound, or both respond in the appropriate way
