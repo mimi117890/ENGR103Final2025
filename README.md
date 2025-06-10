@@ -1,4 +1,6 @@
 # ENGR103Final2025
+Sources:
+
 cpx library
 
 / Author: Carter Nelson
@@ -12,4 +14,9 @@ light, sound, serial monitor
 
 
 game rules:
-flip switch to start, press left button when just light, right button for just sound, or vigorously shake board when both occur. is a reaction time game.
+1: flip switch to start
+2: after each output, either light, sound, or both respond in the appropriate way
+3: Press left button when output is just light, right button for just sound, and vigorously shake board when both occur.
+4: You will get a point each time that the input you use matches the output that was given. There is a maximum of 45 points.
+5: There are also 9 levels, with shorter response times and more outputs in each level.
+
